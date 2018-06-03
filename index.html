@@ -72,6 +72,23 @@ img {
     height: auto;
 }
 
+.pcimgframe {
+    border-radius: 25px;
+    border: 10px solid grey;
+    padding: 1px; 
+    object-fit: cover;
+}
+.textarea {
+border: none;
+}
+textarea {	
+	border-radius: 5px;
+	border: 3px solid grey;
+    background-color: grey;
+    resize: none;
+    width: 100%;
+}
+
 /* Extra small devices (phones, 600pxand down) */
 @media only screen and (max-width: 600px) {
     /* For extra small devices: */
@@ -194,14 +211,16 @@ img {
 
 <div class="col-xs-12 col-s-12 col-m-3 col-l-3 col-xl-3 menu">
   <ul>
-    <li>Atlantis</li>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
-    <li>...</li>
+     <img id="pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScTykTgSH24_o-6x6fS7K1NNtRNKvP9QRv3s1PDOgkmbLe7LxBFw" 
+	  alt="eye" class="pcimgframe">
+
+    <fieldset class="textarea">
+    <div>
+        <textarea id="promptframe" style="width: 100%; height: 60px"></textarea>
+        <li onclick="myFunction()" align="center">E N T E R</li>
+    </div>
+</fieldset>
+    
   </ul>
 </div>
 
