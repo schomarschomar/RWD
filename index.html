@@ -212,12 +212,20 @@ textarea {
 <script>
 function myItem() {
    var y = document.getElementById("prompt").value;
-      
-   if (y== "1") {
+   
+   if (y== "help") {
+    document.getElementById("pic").style.display = "block";
+    document.getElementById("item0").innerHTML = "Command identified. You need help...";
+   }	
+   if (y== "0") {
+    document.getElementById("pic").style.display = "block";
+    document.getElementById("item0").innerHTML = ".";
+   }
+   if (y== "atlantis") {
     document.getElementById("pic").style.display = "block";
     document.getElementById("item0").innerHTML = "Command identified. Navigating to Atlantis...";
    }
-   if (y== "2") {
+   if (y== "stargate") {
    document.getElementById("pic").style.display = "block";
    document.getElementById("item0").innerHTML = "Command identified. Navigating to Stargate...";
    }
