@@ -3,25 +3,84 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+/* ************************************************************************************************* */
+/* all elements                                                                                          */
+/* ************************************************************************************************* */
+/* Selector	Example		Example description                                                  */
+/*	*	*		Selects all elements                                                 */
+/* ************************************************************************************************* */
 * {
     box-sizing: border-box;
 }
+
+/* ************************************************************************************************* */
+/* elements with attribute                                                                           */
+/* ************************************************************************************************* */
+/* Selector		Example			Example description                                  */                  						*/	
+[attribute*=value]	a[href*="w3schools"]	Selects every <a> element                            */
+/*	                                        whose href attribute value                           */
+/*						contains the substring "w3schools"                   */
+/* ************************************************************************************************* */	
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+	
+/* ************************************************************************************************* */
+/* elements                                                                       */
+/* ************************************************************************************************* */	
+/* Selector		Example			Example description                                  */     	
+/* element		p			Selects all <p> elements                             */
+/* ************************************************************************************************* */	
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+textarea {	
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 3px solid grey;
+    background-color: grey;
+    resize: none;
+    width: 100%;
+}
+	
+/* ************************************************************************************************* */
+/* classes and after                                                                                          */
+/* ************************************************************************************************* */
+/* Selector	Example		Example description                                                  */
+/* .class	.intro		Selects all elements with class="intro"               	             */
+/* ::after	p::after	Insert something after the content of each <p> element
+/* ************************************************************************************************* */
 .row::after {
     content: "";
     clear: both;
     display: table;
 }
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-html {
-    font-family: "Lucida Sans", sans-serif;
-}
+	
+/* ************************************************************************************************* */
+/* classes                                                                                           */
+/* ************************************************************************************************* */
+/* Selector	Example		Example description                                                  */
+/* .class	.intro		Selects all elements with class="intro"               	             */
+/* ************************************************************************************************* */
+/* ************************************************************************************************* */
+/* header                                                                                            */
+/* ************************************************************************************************* */
 .header {
     padding: 15px;
     color: #ffffff;
 }
+/* ************************************************************************************************* */
+/* menu                                                                                              */
+/* ************************************************************************************************* */
 .menu {
     margin-top: 15px;
     padding: 15px;
@@ -42,6 +101,9 @@ html {
 .menu li:hover {
     background-color: #0099cc;
 }
+/* ************************************************************************************************* */
+/* container                                                                                         */	
+/* ************************************************************************************************* */
 .aside {
     color: #ffffff;
     margin-top: -17px;
@@ -63,14 +125,9 @@ html {
     font-size: 12px;
     padding: 15px;
 }
-video {
-    width: 100%;
-    height: auto;
-}
-img {
-    width: 100%;
-    height: auto;
-}
+/* ************************************************************************************************* */
+/* pc                                                                                                */
+/* ************************************************************************************************* */
 .pc {
     border-radius: 25px;
     border: 10px solid grey;
@@ -81,8 +138,8 @@ img {
 }
 .pccommand {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1E_MnZ7YCbBb7UIYF9euHHyLtVWzsP3NXgqDPLD1H3_z56dEdg");
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-buttom-left-radius: 15px;
+    border-buttom-right-radius: 15px;
     color: #ffffff;
 }
 .pcimage {
@@ -90,17 +147,11 @@ img {
     border-buttom-right-radius: 15px;
 }
 .pctextarea {
-border: none;
+    border: none;
 }
-textarea {	
-  margin-top: 5px;
-	border-radius: 5px;
-	border: 3px solid grey;
-    background-color: grey;
-    resize: none;
-    width: 100%;
-}
-
+/* ************************************************************************************************* */
+/* @media                                                                                            */	
+/* ************************************************************************************************* */	
 /* Extra small devices (phones, 600pxand down) */
 @media only screen and (max-width: 600px) {
     /* For extra small devices: */
