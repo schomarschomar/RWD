@@ -219,24 +219,28 @@ function myItem() {
    
    if (y== "help") {
     document.getElementById("pic").style.display = "block";
-    document.getElementById("item0").innerHTML = "Command identified.";
+    document.getElementById("item0").innerHTML = "Really?";
     document.getElementById("item1").innerHTML = "You need help...";
    }	
    if (y== "0") {
     document.getElementById("pic").style.display = "block";
-    document.getElementById("item0").innerHTML = ".";
+    document.getElementById("item0").innerHTML = "";
+    document.getElementById("item1").innerHTML = "";
    }
    if (y== "atlantis") {
     document.getElementById("pic").style.display = "block";
-    document.getElementById("item0").innerHTML = "Command identified. Navigating to Atlantis...";
+    document.getElementById("item0").innerHTML = "Here is Atlantis.";
+    document.getElementById("item1").innerHTML = "What can I do?";
    }
    if (y== "stargate") {
    document.getElementById("pic").style.display = "block";
-   document.getElementById("item0").innerHTML = "Command identified. Navigating to Stargate...";
+   document.getElementById("item0").innerHTML = "Stargate...";
+   document.getElementById("item1").innerHTML = "Coordinates, please...";
    }
-   if (y== "3") {
+   if (y== "?") {
    document.getElementById("pic").style.display = "block";
-   document.getElementById("item0").innerHTML = "Command identified. Navigating to Help...";
+   document.getElementById("item0").innerHTML = "????";
+   document.getElementById("item1").innerHTML = "What are you asking me?";
    }
 }
 </script>
