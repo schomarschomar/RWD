@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* ************************************************************************************************* */
+/* all elements                                                                                      */
+/* ************************************************************************************************* */
+/* Selector	Example		Example description                                                  */
+/*	*	*		Selects all elements                                                 */
+/* ************************************************************************************************* */
+* {
+    box-sizing: border-box;
+}
+/* ************************************************************************************************* */
+/* elements with attribute                                                                           */
+/* ************************************************************************************************* */
+/* Selector		Example			Example description                                  */                  						
+/* [attribute*=value]	a[href*="w3schools"]	Selects every <a> element                            */
+/*	                                        whose href attribute value                           */
+/*						contains the substring "w3schools"                   */
+/* ************************************************************************************************* */	
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+	
+/* ************************************************************************************************* */
+/* elements                                                                                          */
+/* ************************************************************************************************* */	
+/* Selector		Example			Example description                                  */     	
+/* element		p			Selects all <p> elements                             */
+/* ************************************************************************************************* */	
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+textarea {	
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 3px solid grey;
+    background-color: grey;
+    resize: none;
+    width: 100%;
+}
+	
+/* ************************************************************************************************* */
+/* classes and after                                                                                 */
+/* ************************************************************************************************* */
+/* Selector	Example		Example description                                                  */
+/* .class	.intro		Selects all elements with class="intro"               	             */
+/* ::after	p::after	Insert something after the content of each <p> element               */
+/* ************************************************************************************************* */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+	
+/* ************************************************************************************************* */
+/* classes                                                                                           */
+/* ************************************************************************************************* */
+/* Selector	Example		Example description                                                  */
+/* .class	.intro		Selects all elements with class="intro"               	             */
+/* ************************************************************************************************* */
+/* ************************************************************************************************* */
+/* menu                                                                                              */
+/* ************************************************************************************************* */
+.menu {
+    margin-top: 15px;
+    padding: 15px;
+    float: left;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    background-color: navy;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+/* ************************************************************************************************* */
+/* container                                                                                         */	
+/* ************************************************************************************************* */
+.header {
+    padding: 15px;
+    color: #ffffff;
+}
+.aside {
+    color: #ffffff;
+    margin-top: -15px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.main {
+    color: #ffffff;
+    text-align: left;
+    font-size: 12px;
+    padding: 15px;
+}
+.footer {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+/* ************************************************************************************************* */
+/* pc                                                                                                */
+/* ************************************************************************************************* */
+.pc {
+    border-radius: 25px;
+    border: 10px solid grey;
+    margin-bottom: 7px;
+    color: #ffffff;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.pccommand {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1E_MnZ7YCbBb7UIYF9euHHyLtVWzsP3NXgqDPLD1H3_z56dEdg");
+    border-buttom-left-radius: 15px;
+    border-buttom-right-radius: 15px;
+    color: #ffffff;
+}
+.pcimage {
+    border-buttom-left-radius: 15px;
+    border-buttom-right-radius: 15px;
+}
+.pctextarea {
+    border: none;
+}
+/* ************************************************************************************************* */
+/* @card                                                                                           */	
+/* ************************************************************************************************* */	
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 0 8px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.title {
+  color: grey;
+}
+.characterimgframe {
+    border-radius: 25px;
+    border: 3px solid grey;
+    padding: 1px; 
+    width: 45%;
+    height: 30%; 
+}
+/* ************************************************************************************************* */
+/* @media                                                                                            */	
+/* ************************************************************************************************* */	
+/* Extra small devices (phones, 600pxand down) */
+@media only screen and (max-width: 600px) {
+    /* For extra small devices: */
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+    
+    .header {background-color: #5C97BF;}
+    .menu   {background-color: #5C97BF;}
+    .main   {background-color: #5C97BF;}
+    .aside  {background-color: #5C97BF;}
+    .footer {background-color: #5C97BF;}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* For small devices: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+    .header {background-color: lightskyblue;}
+    .menu   {background-color: lightskyblue;}
+    .main   {background-color: lightskyblue;}
+    .aside  {background-color: lightskyblue;}
+    .footer {background-color: lightskyblue;}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* For medium devices: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+    .header {background-color: lightsteelblue;}
+    .menu   {background-color: lightsteelblue;}
+    .main   {background-color: lightsteelblue;}
+    .aside  {background-color: lightsteelblue;}
+    .footer {background-color: lightsteelblue;}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+ /* For desktop: */
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+    
+    .header {background-color: cornflowerblue;}
+    .menu   {background-color: cornflowerblue;}
+    .main   {background-color: cornflowerblue;}
+    .aside  {background-color: cornflowerblue;}
+    .footer {background-color: cornflowerblue;}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+/* For desktop: */
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+    
+    .header {background-color: royalblue;}
+    .menu   {background-color: royalblue;}
+    .main   {background-color: royalblue;}
+    .aside  {background-color: royalblue;}
+    .footer {background-color: royalblue;}
+}
+</style>
+	
+<script>
+function myItem() {
+   var y = document.getElementById("prompt").value;
+   
+   if (y== "help") {
+    document.getElementById("pic").style.display = "block";
+    document.getElementById("item0").innerHTML = "Really?";
+    document.getElementById("item1").innerHTML = "You need help...";
+   }	
+   if (y== "clear") {
+    document.getElementById("pic").style.display = "block";
+    document.getElementById("item0").innerHTML = "<<<";
+    document.getElementById("item1").innerHTML = ">>>";
+   }
+   if (y== "atlantis") {
+    document.getElementById("pic").style.display = "block";
+    document.getElementById("item0").innerHTML = "Here is Atlantis.";
+    document.getElementById("item1").innerHTML = "What can I do?";
+   }
+   if (y== "stargate") {
+   document.getElementById("pic").style.display = "block";
+   document.getElementById("item0").innerHTML = "Stargate...";
+   document.getElementById("item1").innerHTML = "Coordinates, please...";
+   }
+   if (y== "?") {
+   document.getElementById("pic").style.display = "block";
+   document.getElementById("item0").innerHTML = "????";
+   document.getElementById("item1").innerHTML = "What are you asking me?";
+   }
+}
+</script>
+	
+</head>
+<body>
+
+<div class="col-xs-12 col-s-12 col-m-12 col-l-12 col-xl-12 header">
+  <h1>Stargate Atlantis</h1>
+</div>
+
+<div class="row">
+
+ <div class="col-xs-12 col-s-12 col-m-3 col-l-3 col-xl-3 menu">
+  <div class="pc">
+	  <img id="pic" class="pcimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1E_MnZ7YCbBb7UIYF9euHHyLtVWzsP3NXgqDPLD1H3_z56dEdg
+" alt="Gate" style="display:block">
+       <ul class="pccommand">
+           <li id="item0" class="pccommand" color="#010A19"> <<< </li>
+	   <li id="item1" class="pccommand" color="#010A19"> >>> </li>
+       </ul>
+       
+  </div>
+
+	<div class="pcimgframe">
+		<fieldset class="pctextarea">
+			<textarea id="prompt" style="width: 100%; height: 70px"></textarea>
+   			<ul>
+   			  <li onclick="myItem()" align="center">E N T E R</li>
+     			</ul> 
+		</fieldset>
+	</div>
+</div>
+
+<div class="col-xs-12 col-s-12 col-m-9 col-l-6 col-xl-6" class="main">
+  <div class="column">
+    <div class="card">
+       <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="John Sheppard" class="contactimgframe">
+        <h3>John Sheppard</h3>
+        <p class="title">Lieutenant Colonel</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+       <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Dr Rodney McKay" class="contactimgframe">
+        <h3>Dr. Rodney McKay</h3>
+        <p class="title">Ph.D</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: Canadian</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+       <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Teyla Emmagan" class="contactimgframe">
+        <h3>Teyla Emmagan</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: None</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Ronon Dex" class="contactimgframe">
+        <h3>Ronon Dex</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: None</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Dr RadekZelenka" class="contactimgframe">
+        <h3>Dr. Radek Zelenka</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me.</p>
+        <p>Nationality: Czech</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="DrCarsonBeckett" class="contactimgframe">
+        <h3>Dr. Carson Beckett</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: Scottish</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Dr Jennifer Keller" class="contactimgframe">
+        <h3>Dr. Jennifer Keller</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Dr Elizabeth Weir" class="contactimgframe">
+        <h3>Dr. Elizabeth Weir</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Dr Samantha Carter" class="contactimgframe">
+        <h3>Dr. Samantha Carter</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Richard Woolsey" class="contactimgframe">
+        <h3>Richard Woolsey</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Steven Caldwell" class="contactimgframe">
+        <h3>Steven Caldwell</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Evan Lorne" class="contactimgframe">
+        <h3>Evan Lorne</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Abe Ellis" class="contactimgframe">
+        <h3>Abe Ellis</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+   </div>
+  
+   <div class="column">
+    <div class="card">
+      <div class="container">
+        <img class="characterimgframe" src="data:image/png;base64,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" alt="Aiden Ford" class="contactimgframe">
+        <h3>Aiden Ford</h3>
+        <p class="title">Title</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>Nationality: American</p>
+        <p><button class="button">More</button></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="col-xs-12 col-s-12 col-m-12 col-l-3 col-xl-3" class="aside">
+  <div class="aside">
+    <h2>What?</h2>
+    <p>Stargate Atlantis explore distant planets in the Pegasus Galaxy. They use an alien device known as a Stargate that was built millions of years ago by an advanced race of humans known as the Ancients.</p>
+    <h2>Where?</h2>
+    <p>The expedition is based in the Lost City of Atlantis on the planet "Lantea". </p>
+    <h2>When?</h2>
+    <p>The city was built millions of years ago and abandoned 10,000 years ago by the Ancients. Five to ten million years ago, due to a plague in the Milky Way Galaxy, they were forced to flee to the Pegasus Galaxy, and there they seeded life on hundreds of worlds as they had done to Earth in the Milky Way.</p>
+    <h2>Who?</h2>
+    <p>Stargate Command sends an international team to investigate the outpost.</p>
+    <h2>Against?</h2>
+    <p>After encountering a powerful enemy known as the Wraith and going to war with them for one hundred years, the Ancients ultimately lost and were forced to submerge their city beneath Lantea's ocean, which, in the Stargate universe, is the source of the Greek myth of the Lost City of Atlantis.</p>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">
+  <p>Ancients</p>
+</div>
+
+</body>
+</html>
