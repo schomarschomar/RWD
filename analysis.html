@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#one {
+	margin-top: -15px;
+    width: 120px;
+    background-color: lightblue;
+    color: white;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+#two {
+	margin-top: -15px;
+    width: 220px;
+    background-color: blue;
+    color: white;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+#three {
+	margin-top: -15px;
+    width: 180px;
+    background-color: darkblue;
+    color: white;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {width: 500px;}
+}
+/* Standard syntax */
+@keyframes mymove {
+    50% {width: 500px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Analysis</h1>
+
+<div id="one">
+  <h4>1</h4>
+</div>
+<div id="two">
+  <h4>2</h4>
+</div>
+<div id="three">
+  <h4>3</h4>
+</div>
+
+</body>
+</html>
