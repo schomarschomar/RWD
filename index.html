@@ -324,11 +324,18 @@ function myItem() {
     document.getElementById("mainframe").src = "pc.html";
     document.getElementById("aboutframe").src = "stargate_about.html";
    }
-    if (y== "character") {
+   if (y== "character") {
     document.getElementById("pic").style.display = "block";
     document.getElementById("item0").innerHTML = "Character.";
     document.getElementById("item1").innerHTML = "Choose as you wish.";
     document.getElementById("mainframe").src = "character.html";
+    document.getElementById("aboutframe").src = "stargate_about.html";
+   }
+   if (y== "combat") {
+    document.getElementById("pic").style.display = "block";
+    document.getElementById("item0").innerHTML = "Combat.";
+    document.getElementById("item1").innerHTML = "Wish you luck.";
+    document.getElementById("mainframe").src = "combat.html";
     document.getElementById("aboutframe").src = "stargate_about.html";
    }
 }
