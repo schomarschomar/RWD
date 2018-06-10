@@ -253,10 +253,15 @@ textarea {
 
 <script>
 
-function next() {
+function next(counter) {
+	var counter;
+	switch (counter) {
+    		case 2:
+        		document.getElementById("character").src = "sheppard.html";
+			alert("I am an alert box!");
+        		break;
+    	}
 	
-	document.getElementById("character").src = "sheppard.html";
-	alert("I am an alert box!");
 }
 </script>
 
@@ -273,7 +278,7 @@ function next() {
 	   </div>	   
       </div>
     </div>
-    <button onClick="next()"> Next </button>
+    <button onClick="next(2)"> Next </button>
   </div>
 
   
