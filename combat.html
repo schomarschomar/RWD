@@ -250,6 +250,53 @@ textarea {
     .footer {background-color: royalblue;}
 }
 </style>
+
+<script> 
+{
+  var Hp = 50;
+  var EnemyHPmax = 10;
+  var EnemyHP = 10;
+  var EnemiesKilled = 0;	   
+}   
+	
+function gamestart() {
+Hp = 50;
+EnemyHPmax = 10;
+EnemyHP = 10;
+EnemiesKilled = 0;
+  document.getElementById("HP").innerHTML='HP ' + Hp;
+}
+function attack() {
+    var PATK = Math.floor((Math.random() * 5) + 1);
+    var EATK = Math.floor((Math.random() * 5) + 1);
+    EnemyHP = EnemyHP - PATK;
+      
+    if (EnemyHP < 1) {
+    	EnemiesKilled = EnemiesKilled + 1;
+        EnemyHPmax = EnemyHPmax + 5;
+    	EnemyHP = EnemyHPmax;
+        Hp = Hp + Math.floor((Math.random() * 10) + 1);
+        document.getElementById("HP").innerHTML='HP ' + Hp;
+        document.getElementById("events").innerHTML='You dealt ' + PATK + ' damage and killed the enemy.';
+   	}
+    
+    else {
+    	Hp = Hp - EATK;
+        document.getElementById("HP").innerHTML='HP ' + Hp;
+        
+    	if (Hp > 0) {
+ 	document.getElementById("events").innerHTML='You dealt ' + PATK + ' damage. The enemy dealt ' + EATK + ' damage';
+        }
+        
+     if (Hp < 1) { 
+   		document.getElementById("events").innerHTML="You died!";
+        alert("You died after killing " + EnemiesKilled + "Enemies")
+        gamestart()
+	 }
+    }
+    
+} 
+</script>
 	
 </head>
 <body>
