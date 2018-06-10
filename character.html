@@ -253,7 +253,7 @@ textarea {
 
 <script>
 function next() {
-	alert("Done!");
+	<iframe id="mainframe" src="sheppard.html" style="border:none;" scrolling="no"></iframe>
 }
 </script>
 
@@ -263,7 +263,7 @@ function next() {
 
 <div class="col-xs-12 col-s-12 col-m-9 col-l-6 col-xl-6" class="main">
   <div class="column">
-    <div class="card" style="display: none;">
+    <div class="card" style="display: block;">
        <div class="container">
 	   <div>
         	<iframe id="character" src="sheppard.html" style="border:none;" scrolling="no"></iframe>
@@ -272,9 +272,10 @@ function next() {
     </div>
   </div>
 
+  <button onClick="next()"> Next </button>
  
   <div class="column">
-    <div class="card" style="display: block;">
+    <div class="card" style="display: none;">
        <div class="container">
         <img class="characterimgframe" src="data:image/png;base64,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" alt="Dr Rodney McKay" class="contactimgframe">
         <h3>Dr. Rodney McKay</h3>
@@ -286,8 +287,6 @@ function next() {
     </div>
   </div>
 
-   <button onClick="next()"> Next </button>
-  
   <div class="column">
     <div class="card" style="display: none;">
        <div class="container">
