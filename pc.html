@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+/* ************************************************************************************************* */
+/* elements                                                                                          */
+/* ************************************************************************************************* */	
+/* Selector		Example			Example description                                  */     	
+/* element		p			Selects all <p> elements                             */
+/* ************************************************************************************************* */	
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+textarea {	
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 3px solid grey;
+    background-color: grey;
+    resize: none;
+    width: 100%;
+}
+
+/* ************************************************************************************************* */
+/* classes                                                                                           */
+/* ************************************************************************************************* */
+/* Selector	Example		Example description                                                  */
+/* .class	.intro		Selects all elements with class="intro"               	             */
+/* ************************************************************************************************* */
+
+/* ************************************************************************************************* */
+/* pc                                                                                                */
+/* ************************************************************************************************* */
+.pc {
+    border-radius: 25px;
+    border: 10px solid grey;
+    margin-bottom: 7px;
+    color: #ffffff;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.pccommand {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1E_MnZ7YCbBb7UIYF9euHHyLtVWzsP3NXgqDPLD1H3_z56dEdg");
+    border-buttom-left-radius: 15px;
+    border-buttom-right-radius: 15px;
+    color: #ffffff;
+}
+.pcimage {
+    border-buttom-left-radius: 15px;
+    border-buttom-right-radius: 15px;
+}
+.pctextarea {
+    border: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="pc">
+<img id="pic" class="pcimage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA1E_MnZ7YCbBb7UIYF9euHHyLtVWzsP3NXgqDPLD1H3_z56dEdg
+" alt="pc" style="display:block">
+       <ul class="pccommand">
+           <li id="item0" class="pccommand" color="#010A19"> <<< </li>
+	         <li id="item1" class="pccommand" color="#010A19"> >>> </li>
+       </ul>
+       
+ </div>
+
+	<div class="pcimgframe">
+		<fieldset class="pctextarea">
+			<textarea id="prompt" style="width: 100%; height: 70px"></textarea>
+   			<ul>
+   			  <li onclick="myItem()" align="center">E N T E R</li>
+     			</ul> 
+		</fieldset>
+    
+</body>
+</html>
