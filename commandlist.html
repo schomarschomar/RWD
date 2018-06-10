@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#commandlist {
+    border: 1px solid black;
+    width: 500px;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    50% {-webkit-column-count: 8;}
+}
+
+@keyframes mymove {
+    50% {column-count: 8;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of column-count</h1>
+
+<p>Change the number of columns from 1 to 5, then back:<p>
+
+<div id="commandlist">
+help
+6hrt
+0jhgs
+ubdgf
+clear
+07tz
+7lfgdg
+atlantis
+ff457
+0ogfdfd
+daedalus 
+70w7
+scan 
+7jfcg
+analysis 
+1dked
+stargate 
+5idgh
+pc 
+character 
+7kzkfg
+4fghfh
+0sgdf
+combat
+8dghd
+46hhf
+</div>
+
+<p><b>Note:</b> Edge does not support animation on the column-count property.</p>
+
+</body>
+</html>
