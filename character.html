@@ -256,14 +256,33 @@ textarea {
 function next(counter) {
 	var counter;
 	switch (counter) {
+		case 1:
+        		document.getElementById("character").src = "sheppard.html";
+			document.getElementById("first").style.display = "none";
+			document.getElementById("previous").style.display = "none";
+			document.getElementById("next").style.display = "block";
+			document.getElementById("last").style.display = "block";
+			break;
     		case 2:
         		document.getElementById("character").src = "mckay.html";
+			document.getElementById("first").style.display = "none";
+			document.getElementById("previous").style.display = "block";
+			document.getElementById("next").style.display = "block";
+			document.getElementById("last").style.display = "block";
 			break;
 		case 3:
         		document.getElementById("character").src = "mckay.html";
+			document.getElementById("first").style.display = "block";
+			document.getElementById("previous").style.display = "block";
+			document.getElementById("next").style.display = "block";
+			document.getElementById("last").style.display = "block";
 			break;
 		case 4:
         		document.getElementById("character").src = "emmagan.html";
+			document.getElementById("first").style.display = "block";
+			document.getElementById("previous").style.display = "block";
+			document.getElementById("next").style.display = "block";
+			document.getElementById("last").style.display = "block";
 			break;
     	}
 	
@@ -287,7 +306,10 @@ function more() {
 	   </div>	   
       </div>
     </div>
-    <button onClick="next(2)"> Next </button>
+    <button id="first" onClick="next(1)"> First </button>
+    <button id="previous" onClick="next(1)"> Previous </button>
+    <button id="next" onClick="next(2)"> Next </button>
+    <button id="last" onClick="next(12)"> Last </button>
   </div>
 
   <div class="column">
@@ -298,8 +320,10 @@ function more() {
 	   </div>	
 	</div>
     </div>
-	<button onClick="next(1)"> Previous </button>
-    	<button onClick="next(3)"> Next </button> 
+	<button id="first" onClick="next(1)"> First </button>
+	<button id="previous" onClick="next(1)"> Previous </button>
+    	<button id="next" onClick="next(3)"> Next </button>
+	<button id="last" onClick="next(12)"> Last </button> 
    </div>
 
   <div class="column">
