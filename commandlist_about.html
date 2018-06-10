@@ -3,7 +3,6 @@
 <head>
 <style> 
 #commandlist {
-    border: 1px solid black;
     width: 500px;
     -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
     animation: mymove 5s infinite;
@@ -11,19 +10,15 @@
 
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
-    50% {-webkit-column-count: 8;}
+    50% {-webkit-column-count: 4;}
 }
 
 @keyframes mymove {
-    50% {column-count: 8;}
+    50% {column-count: 4;}
 }
 </style>
 </head>
 <body>
-
-<h1>Animation of column-count</h1>
-
-<p>Change the number of columns from 1 to 5, then back:<p>
 
 <div id="commandlist">
 help
